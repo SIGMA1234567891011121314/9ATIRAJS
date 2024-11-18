@@ -1,23 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>minecrafte</title>
+    <title>Portfólio de Projetos - JavaScript</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-       <ul>
-        <li>sobre</li>
-        <li>cadrastro</li>
-        <li>redes</li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-       </ul>
+        <div class="container">
+            <h1>Meu Portfólio</h1>
+            <p>9 Projetos Feitos em JavaScript</p>
+        </div>
     </header>
+
+    <section class="projects">
+        <div class="project" onclick="showProjectDetails(1)">
+            <h3>Projeto 1</h3>
+            <p>Descrição do Projeto 1.</p>
+        </div>
+        <div class="project" onclick="showProjectDetails(2)">
+            <h3>Projeto 2</h3>
+            <p>Descrição do Projeto 2.</p>
+        </div>
+        <div class="project" onclick="showProjectDetails(3)">
+            <h3>Projeto 3</h3>
+            <p>Descrição do Projeto 3.</p>
+        </div>
+        <div class="project" onclick="showProjectDetails(4)">
+            <h3>Projeto 4</h3>
+            <p>Descrição do Projeto 4.</p>
+        </div>
+        <div class="project" onclick="showProjectDetails(5)">
+            <h3>Projeto 5</h3>
+            <p>Descrição do Projeto 5.</p>
+        </div>
+        <div class="project" onclick="showProjectDetails(6)">
+            <h3>Projeto 6</h3>
+            <p>Descrição do Projeto 6.</p>
+        </div>
+        <div class="project" onclick="showProjectDetails(7)">
+            <h3>Projeto 7</h3>
+            <p>Descrição do Projeto 7.</p>
+        </div>
+        <div class="project" onclick="showProjectDetails(8)">
+            <h3>Projeto 8</h3>
+            <p>Descrição do Projeto 8.</p>
+        </div>
+        <div class="project" onclick="showProjectDetails(9)">
+            <h3>Projeto 9</h3>
+            <p>Descrição do Projeto 9.</p>
+        </div>
+    </section>
+
+    <section id="project-detail" class="project-detail">
+        <div class="container">
+            <h2>Detalhes do Projeto</h2>
+            <div id="project-info"></div>
+            <button onclick="closeDetails()">Fechar</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 - Meu Portfólio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
